@@ -1,0 +1,31 @@
+text_settings:
+  max_chars_per_chunk: 256
+  max_total_chars_streaming: 3000
+
+codec_configs:
+  "NeuCodec (Standard)":
+    repo: ./models/neucodec
+    description: Codec chuẩn, tốc độ trung bình
+    use_preencoded: false
+  "NeuCodec ONNX (Fast CPU)":
+    repo: neuphonic/neucodec-onnx-decoder
+    description: Tối ưu cho CPU, cần pre-encoded codes
+    use_preencoded: true
+
+voice_samples:
+  "Nam (miền Bắc)":
+    audio: ./sample/Nam (miền Bắc).wav
+    text: ./sample/Nam (miền Bắc).txt
+    codes: ./sample/Nam (miền Bắc).pt
+  "Nam (miền Nam)":
+    audio: ./sample/Nam (miền Nam).wav
+    text: ./sample/Nam (miền Nam).txt
+    codes: ./sample/Nam (miền Nam).pt
+  "Nữ (miền Bắc)":
+    audio: ./sample/Nữ (miền Bắc).wav
+    text: ./sample/Nữ (miền Bắc).txt
+    codes: ./sample/Nữ (miền Bắc).pt
+  "Nữ (miền Nam)":
+    audio: ./sample/Nữ (miền Nam).wav
+    text: ./sample/Nữ (miền Nam).txt
+    codes: ./sample/Nữ (miền Nam).pt
